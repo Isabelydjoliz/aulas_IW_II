@@ -39,7 +39,7 @@ function estado2(){
     return lamp.src.indexOf('ligada') > -1 
 }
 
-function ligar2 (){
+function ligar2(){
     if(!estaQuebrada()){
         lamp.src = "img/ligada.jpg"
     }
@@ -48,7 +48,7 @@ function ligar2 (){
         }
 }
 
-function desligar2 (){
+function desligar2(){
     if(!estaQuebrada()){
         lamp.src = "img/desligada.jpg"
     }
@@ -57,7 +57,7 @@ function desligar2 (){
         }
 }
 
-function destruir (){
+function destruir(){
     lamp.src = "img/quebrada.jpg"
     estado.innerHTML = "Sua lâmpada está Quebrada"
 }
@@ -72,21 +72,32 @@ function duplo (){
     
 }
 
-//funcão sempre tem que estar antes
-//addEventListener identifica a ação do cursor
+// //funcão sempre tem que estar antes
+// //addEventListener identifica a ação do cursor
 
-ligar.addEventListener('click',lampligada)
-desligar.addEventListener('click',lampdesligada)
-consertar.addEventListener('click',lampconsertada)
-//maouseleave identifica o evento de quando o mouse clicar em cima do item
+// ligar.addEventListener('click',lampligada)
+// desligar.addEventListener('click',lampdesligada)
+// consertar.addEventListener('click',lampconsertada)
+// //maouseleave identifica o evento de quando o mouse clicar em cima do item
 
-lampada.addEventListener('mouseover',lampligada)
-lampada.addEventListener('mouseleave',lampdesligada)
-//mouseover identifica o evento de quando o mouse passar por cima do item
-//maouseleave identifica o evento de quando o mouse sair de cima do item
+// lampada.addEventListener('mouseover',lampligada)
+// lampada.addEventListener('mouseleave',lampdesligada)
+// //mouseover identifica o evento de quando o mouse passar por cima do item
+// //maouseleave identifica o evento de quando o mouse sair de cima do item
 
-lampada.addEventListener('dblclick',lampquebrada)
-//dblclick identifica o evento de quando o item for clicado duas vezes
+// lampada.addEventListener('dblclick',lampquebrada)
+// //dblclick identifica o evento de quando o item for clicado duas vezes
+
+//ambos.addEventListener('click', duplo)
+
+
+
+ligar.addEventListener('click',ligar2)
+desligar.addEventListener('click',desligar2)
+
+lamp.addEventListener('mouseover',ligar2)
+lamp.addEventListener('mouseleave',desligar2)
+lamp.addEventListener('dblclick',destruir)
 
 ambos.addEventListener('click', duplo)
 
