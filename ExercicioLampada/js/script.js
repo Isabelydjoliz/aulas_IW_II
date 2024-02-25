@@ -2,8 +2,6 @@ const ligar = document.getElementById('ligar')
 const desligar = document.getElementById('desligar')
 const consertar = document.getElementById('consertar')
 const lampada = document.getElementById('lamp') 
-const estado = document.getElementById ('estado')
-const duplo1 = document.getElementById ('duplo1')
 
 
 function lampligada(){
@@ -29,75 +27,22 @@ function lampconsertada(){
     }
 }
 
-//botão único:
 
-function estado1(){
-    return lamp.src.indexOf('desligada') > -1 
-}
+//funcão sempre tem que estar antes
+//addEventListener identifica a ação do cursor
 
-function estado2(){
-    return lamp.src.indexOf('ligada') > -1 
-}
+ligar.addEventListener('click',lampligada)
+desligar.addEventListener('click',lampdesligada)
+consertar.addEventListener('click',lampconsertada)
+//maouseleave identifica o evento de quando o mouse clicar em cima do item
 
-function ligar2(){
-    if(!estaQuebrada()){
-        lamp.src = "img/ligada.jpg"
-    }
-        if(estado2()){           
-            estado.innerHTML = "Sua lâmpada está Ligada"   
-        }
-}
+lampada.addEventListener('mouseover',lampligada)
+lampada.addEventListener('mouseleave',lampdesligada)
+//mouseover identifica o evento de quando o mouse passar por cima do item
+//maouseleave identifica o evento de quando o mouse sair de cima do item
 
-function desligar2(){
-    if(!estaQuebrada()){
-        lamp.src = "img/desligada.jpg"
-    }
-        if(comoEsta()){
-            estado.innerHTML = "Sua lâmpada está Desligada"
-        }
-}
-
-function destruir(){
-    lamp.src = "img/quebrada.jpg"
-    estado.innerHTML = "Sua lâmpada está Quebrada"
-}
-
-function duplo (){
-    if(estado()){
-        ligar2()
-    }
-    else{
-        desligar2()
-    }
-    
-}
-
-// //funcão sempre tem que estar antes
-// //addEventListener identifica a ação do cursor
-
-// ligar.addEventListener('click',lampligada)
-// desligar.addEventListener('click',lampdesligada)
-// consertar.addEventListener('click',lampconsertada)
-// //maouseleave identifica o evento de quando o mouse clicar em cima do item
-
-// lampada.addEventListener('mouseover',lampligada)
-// lampada.addEventListener('mouseleave',lampdesligada)
-// //mouseover identifica o evento de quando o mouse passar por cima do item
-// //maouseleave identifica o evento de quando o mouse sair de cima do item
-
-// lampada.addEventListener('dblclick',lampquebrada)
-// //dblclick identifica o evento de quando o item for clicado duas vezes
-
-//ambos.addEventListener('click', duplo)
+lampada.addEventListener('dblclick',lampquebrada)
+//dblclick identifica o evento de quando o item for clicado duas vezes
 
 
-
-ligar.addEventListener('click',ligar2)
-desligar.addEventListener('click',desligar2)
-
-lamp.addEventListener('mouseover',ligar2)
-lamp.addEventListener('mouseleave',desligar2)
-lamp.addEventListener('dblclick',destruir)
-
-ambos.addEventListener('click', duplo)
 
