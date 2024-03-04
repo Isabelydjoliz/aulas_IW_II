@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Calculadora</title>
 </head>
 <body>
-    <h1>Exemplo Valor de Imput</h1>
-    Digite o primeiro número:
-    <input id="num1" name="num1" value="" type="number">
-    <button id="botaonum1" onclick="peganum1()">Confirmar</button>
-    Digite o primeiro número:
-    <input id="num2" name="num2" value="" type="number">
-    <button id="botaonum2" onclick="peganum2()">Confirmar</button>
+    <div>
+        <h1>Calculadora da D'joliz</h1>
+        <p>Digite o primeiro número: <input id="num1" value="" type="number"></p>
+        <p>Digite o segundo número: <input id="num2" value="" type="number"></p>
 
-    <button id="soma" onclick="botao_somar()">Soma</button>
-    <button id="sub" onclick="botao_subtrair()">subtração</button>
-    <button id="div" onclick="botao_dividir()">Dividir</button>
-    <button id="mult" onclick="bota_multiplicacao()">Multiplicação</button>
+        <button id="soma" onclick="botao_somar()">Soma</button>
+        <button id="sub" onclick="botao_subtrair()">Subtração</button>
+        <button id="div" onclick="botao_dividir()">Divisão</button>
+        <button id="mult" onclick="botao_multiplicacao()">Multiplicação</button>
+        <button id="limpa" onclick="limpar()" >Limpar</button>
+        <h2>O resultado é: <span id="resul">0</span></h2>
+    </div>
 
     <script src="js/java.js"></script>
 </body>

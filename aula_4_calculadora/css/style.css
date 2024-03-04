@@ -1,0 +1,15 @@
+body{
+    background-color: rgb(226, 124, 93);
+}
+div{
+    text-align: center
+}
+h1, h2, p{
+    color: aliceblue;
+}
+button{
+    background-color: rgb(211, 71, 28);
+    border-color: aliceblue;
+    color: aliceblue;
+}
+
