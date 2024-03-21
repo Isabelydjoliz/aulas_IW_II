@@ -7,5 +7,5 @@ https://isabelydjoliz.github.io/aulas_IW_II/aula_4_calculadora/
 https://isabelydjoliz.github.io/aulas_IW_II/exercicio_lampada_botao_unico/
 # link calculadora IMC:
 https://isabelydjoliz.github.io/aulas_IW_II/aula_05_calculadora_IMC/
-#link para os exercícios
-https://isabelydjoliz.github.io/aulas_IW_II/aulas_06_exercicios
+# link para os exercícios
+https://isabelydjoliz.github.io/aulas_IW_II/aula_06_exercicios
