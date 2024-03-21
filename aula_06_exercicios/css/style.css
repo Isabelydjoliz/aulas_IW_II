@@ -1,0 +1,123 @@
+body{
+    background-color: rgb(143, 192, 119);
+    text-align: center;
+}
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #cbc7c7;
+  }
+  
+  .button:hover {background-color: #3e8e41}
+  
+  .button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+footer{
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    padding-top: 10%;
+}
+
+.prox {
+    width: 20%;
+    height: auto;
+    padding-top: 10%;
+    padding-right: 15%;
+    float: right;
+  }
+
+.antes {
+    float: left;
+}
+
+h1 {
+    padding-top: 5%;
+}
+
+.buttonverm {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #f40000;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #cbc7c7;
+  }
+  
+  .buttonverm:hover {background-color: #c03118}
+  
+  .buttonverm:active {
+    background-color: #d51c1c;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  .buttonazul {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #3114d9;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #cbc7c7;
+  }
+  
+  .buttonazul:hover {background-color: #0b1570}
+  
+  .buttonazul:active {
+    background-color: #2e2b6e;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  .buttonverde {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #32d500;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #cbc7c7;
+  }
+  
+  .buttonverde:hover {background-color: #0b702b}
+  
+  .buttonverde:active {
+    background-color: #10521f;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  .mensagem{
+    font-size: 30px;
+  }
