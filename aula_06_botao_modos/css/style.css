@@ -60,6 +60,21 @@ button {
     color: #fff;
 }
 
+#btazul {
+    background-color: #1a237e;
+    color: #fff;
+}
+
+#btverde {
+    background-color: #369719;
+    color: #fff;
+}
+
+#btamarelo {
+    background-color: #ffc107;
+    color: #000000;
+}
+
 /* articles com a class box */
 .box {
     padding: 0.625rem;
@@ -95,5 +110,15 @@ button {
 }
 .amarelo {
     background: #ffc107;
+    color: #000000;
+}
+
+.verde {
+    background: #369719;
     color: #fff;
+}
+
+.foto {
+    width: 20%;
+    height: auto;
 }

@@ -35,6 +35,9 @@ function modoDark() {
     tela.classList.add("dark");
     tela.classList.remove("light");
     tela.classList.remove("pink");
+    tela.classList.remove("verde");
+    tela.classList.remove("amarelo");
+    tela.classList.remove("azul");
 }
 
 function modoLight() {
@@ -43,6 +46,9 @@ function modoLight() {
     tela.classList.remove("dark");
     tela.classList.add("light");
     tela.classList.remove("pink");
+    tela.classList.remove("verde");
+    tela.classList.remove("amarelo");
+    tela.classList.remove("azul");
 }
 
 function modoPink() {
@@ -51,8 +57,43 @@ function modoPink() {
     tela.classList.remove("dark");
     tela.classList.remove("light");
     tela.classList.add("pink");
+    tela.classList.remove("verde");
+    tela.classList.remove("amarelo");
+    tela.classList.remove("azul");
 }
 
+function modoAzul() {
+    //event.preventDefault();
+    console.log('modo pink')
+    tela.classList.remove("dark");
+    tela.classList.remove("light");
+    tela.classList.add("azul");
+    tela.classList.remove("verde");
+    tela.classList.remove("amarelo");
+    tela.classList.remove("pink");
+}
+
+function modoVerde() {
+    //event.preventDefault();
+    console.log('modo pink')
+    tela.classList.remove("dark");
+    tela.classList.remove("light");
+    tela.classList.add("verde");
+    tela.classList.remove("pink");
+    tela.classList.remove("amarelo");
+    tela.classList.remove("azul");
+}
+
+function modoAmarelo() {
+    //event.preventDefault();
+    console.log('modo pink')
+    tela.classList.remove("dark");
+    tela.classList.remove("light");
+    tela.classList.remove("pink");
+    tela.classList.remove("verde");
+    tela.classList.add("amarelo");
+    tela.classList.remove("azul");
+}
 /*
 titulo.addEventListener('click', mudarId)
 function mudarId() {
