@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(17, 10, 88);
+}
+
+.container{
+    box-sizing: border-box;
+    border-radius: 5%;
+
+}
+.row{
+    padding-top: 7%;
+}
+
+
+
+h1{
+    color: aliceblue;
+    text-align: center;
+}
+
+label{
+    color: aliceblue;
+}

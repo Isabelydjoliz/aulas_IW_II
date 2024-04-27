@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de formulários com jQuery</title>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/js/bootstrap.bundle.js">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="java/adicionais.js">
+
+    <script type="text/javascript">
+		
+        jQuery.validator.addMethod("arrobaNoInicio", function(value, element){
+            if (value.indexOf("@") == 0){
+                return true
+            }else{
+                return false
+            }
+        }, "Tem que ter um arroba (@) no começo")
+    
+        $(document).ready(function(){
+            $("#formCadastro").validate({
+                rules:{
+                    nome: {
+                        required: true,
+                        maxlength: 100,
+                        minlength: 10,
+                        minWords: 2
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    cidade: {
+                        required: true
+                    },
+                    idade: {
+                        required: true,
+                        min: 1,
+                        max: 120
+                    },
+                    instagram: {
+                        arrobaNoInicio: true
+                    },
+                    rg: {                        
+                        required: true                    
+                    },
+                    telefone: {
+                        required: true,
+                        maxlength: 11,
+                        minlength: 19,
+                    },
+                },
+                submitHandler: function(form){
+                    alert("Você enviou seu formulário")						
+                }
+            })
+        })
+    </script>
+
+</head>
+<body>
+    <h1>Validação Formulário</h1>
+    <div class="container">
+        <form name="formCadastro" id="formCadastro" method="post">
+            <div class="row">
+                <label>Nome</label>
+                <input type="text" name="nome" id="nome" class="form-control" />
+            </div>
+            <div class="row">
+                <label>E-mail</label>
+                <input type="email" name="email" id="email" class="form-control" />
+            </div>				
+            <div class="row">
+                <label>Cidade</label>
+                <select name="cidade" id="cidade" class="form-control">
+                    <option value="">----</option>
+                    <option value="Ribeirão Pires">Ribeirão Pires</option>
+                    <option value="Maua">Maua</option>
+                    <option value="Santo André">Santo André</option>
+                    <option value="Santo André">São Caetano</option>
+                    <option value="Santo André">São Bernardo</option>
+                    <option value="Santo André">Diadema</option>
+                    <option value="Santo André">Rio Grande sa Serra</option>
+                </select>
+            </div>
+            <div class="row">
+                <label>Idade</label>
+                <input type="number" name="idade" id="idade" class="form-control" />
+            </div>
+            <div class="row">
+                <label>Instagram</label>
+                <input type="text" name="instagram" id="instagram" class="form-control" />
+            </div>
+            <div class="row">
+                <label>RG</label>
+                <input type="text" name="rg" id="rg" class="form-control" />
+            </div>
+            <div class="row">
+                <label>Telefone</label>
+                <input type="text" name="telefone" id="telefone" class="form-control" />
+            </div>
+            <div class="row">
+                <input type="submit" name="enviar" id="enviar" class="btn btn-primary form-control" />
+            </div>
+        </form>
+    </div>
+</body>
+</html>
